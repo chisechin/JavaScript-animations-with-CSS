@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Leadinger | Let us lead you to success - fires on every scroll</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+	<div class="progress"></div>
+
+	<script>
+	/**
+	 * PROGRESS BAR
+	 */
+	var progressBar = document.querySelector('.progress'),
+		documentHeight = document.body.scrollHeight - window.innerHeight,
+		percentScrolled,
+		scheduled = false;
+
+	addEventListener('scroll', function() {
+
+		if ( ! scheduled ) {
+			scheduled = true;
+			setTimeout(function() {
+				percentScrolled = ( pageYOffset / documentHeight ) * 100;
+				progressBar.style.width = percentScrolled + '%';
+				scheduled = false;
+			}, 70);
+		}
+
+	});
+	</script>
+
+</body>
+</html>
