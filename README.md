@@ -2,4 +2,4 @@
 
 ## Smooth out JavaScript animations with CSS
 
-This is a source code to the video at: https://youtu.be/DUo7S3Rqb4s
+This is the source code to our tutorial video available at: https://youtu.be/DUo7S3Rqb4s
